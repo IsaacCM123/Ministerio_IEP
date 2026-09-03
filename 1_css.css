@@ -1,0 +1,26 @@
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+form{
+	border: 2px solid blueviolet;
+	padding: 2em;
+	background: rgba(0, 0, 0, .5);
+}
+h2{
+	font-size: 3em;
+	color: blue;
+}
+input{
+	font-size: 2em;
+	width: 70vw;
+	color: gray;
+	border: 2px solid blueviolet;
+}
+button{
+	font-size: 3em;
+	padding: 1em;
+	border: none;
+}
