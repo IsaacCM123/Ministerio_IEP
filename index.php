@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="1_css.css">
 </head>
 <body>
-    <h2>Ventas.</h2>
+    <h2>Registro</h2>
     <form method="POST" action="2_persona.php">
         <input type="text" id="N_C" placeholder="nombre..." name="N" autofocus autocomplete="off"><br><br>
         <button type="submit">Insertar</button>
@@ -13,7 +13,7 @@
 
     <table id="table">
         <thead>
-            <th>Indice Pastoral</th>
+            <th>Indice Persona</th>
         </thead>
         <tbody id="cuerpo">
             

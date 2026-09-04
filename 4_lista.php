@@ -19,9 +19,7 @@ if ($resultado) {
         $HTML       .= "<td onclick='obtenerDato(this)'>".$fila['nombrePersona']."</td>";
         $HTML       .= "</tr>";
     }
-} else {
-    echo "Error en la consulta: " . mysqli_error($conexion);
 }
 echo json_encode($HTML, JSON_UNESCAPED_UNICODE);
-
+mysqli_close($conexion);
 ?>
