@@ -10,8 +10,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $stmt = mysqli_prepare($conexion, $sql);
     mysqli_stmt_bind_param($stmt, "s", $Nombre);
 
-    mysqli_stmt_execute($stmt);
-
+    if (mysqli_stmt_execute($stmt)) {
+        $mensaje = "✅ Registro insertado correctamente.";
+    } else {
+        $mensaje = "❌ Error al insertar: " . mysqli_error($conexion);
+    }
     mysqli_stmt_close($stmt);
 }
 mysqli_close($conexion);
