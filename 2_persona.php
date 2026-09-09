@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (mysqli_stmt_execute($stmt)) {
         $mensaje = "✅ Registro insertado correctamente.";
         // ============ AQUÍ SE AGREGA EL AVISO EN TIEMPO REAL ============INICIO
-        $urlSocket = getenv("socket-production-95b7.up.railway.app");
+        $urlSocket = getenv("https://socket-production-95b7.up.railway.app");
         if ($urlSocket) {
             $ch = curl_init($urlSocket . "/notificar");
             curl_setopt($ch, CURLOPT_POST, true);
