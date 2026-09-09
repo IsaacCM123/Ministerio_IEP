@@ -23,7 +23,7 @@
      <!-- ====================== AQUÍ: cliente de Socket.IO ======== INICIO -->
     <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
     <script>
-        const socket = io("socket-production-95b7.up.railway.app"); // URL de tu servicio Node
+        const socket = io("https://socket-production-95b7.up.railway.app"); // URL de tu servicio Node
 
         socket.on('nuevoRegistro', (data) => {
             getData(); // reutilizas tu misma función que ya llena la tabla
