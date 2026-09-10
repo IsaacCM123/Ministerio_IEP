@@ -11,6 +11,8 @@
         <button type="submit">Insertar</button>
     </form>
 
+    <center><a href="pastores.php">Ir a Sitio Pastores</a></center>
+
     <table id="table">
         <thead>
             <th>Indice Persona</th>
